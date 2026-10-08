@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import * as Phaser from 'phaser';
+import { Link } from 'react-router-dom';
 import { IRefPhaserGame, PhaserGame } from './PhaserGame';
 import { MainMenu } from './game/scenes/MainMenu';
 
@@ -96,6 +97,9 @@ function App()
                 </div>
                 <div>
                     <button className="button" onClick={addSprite}>Add New Sprite</button>
+                </div>
+                <div>
+                    <Link to="/demo">Go to Demo</Link>
                 </div>
             </div>
         </div>
